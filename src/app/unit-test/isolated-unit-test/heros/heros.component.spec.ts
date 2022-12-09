@@ -12,7 +12,6 @@ describe('HerosComponent', () => {
 
   it('#clicked() should set #message to "is on"',()=>{
     const comp = new HerosComponent();
-    
     expect(comp.Message).toBe('The light is Off')
     comp.clicked()
     expect(comp.Message).withContext('The light is On')
